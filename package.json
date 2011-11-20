@@ -3,13 +3,13 @@
   "name": "sha1",
   "description": "function for hashing messages with SHA-1",
   "tags": [ "sha1", "hash", "encryption" ],
-  "version": "0.0.0",
+  "version": "0.0.1",
   "repository": {
     "type": "git",
     "url": "git://github.com/pvorb/node-sha1.git"
   },
   "bugs": {
-    "web": "https://github.com/pvorb/node-sha1/issues"
+    "url": "https://github.com/pvorb/node-sha1/issues"
   },
   "main": "sha1.js",
   "engines": {
