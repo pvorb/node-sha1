@@ -4,14 +4,14 @@
       bin = require('charenc').bin,
 
   // The core
-  sha1 = function(message) {
+  sha1 = function (message) {
     // Convert to byte array
     if (message.constructor == String)
       message = utf8.stringToBytes(message);
     // otherwise assume byte array
 
     var m  = crypt.bytesToWords(message),
-        l  = message.length * 8;
+        l  = message.length * 8,
         w  = [],
         H0 =  1732584193,
         H1 = -271733879,
