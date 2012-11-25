@@ -8,6 +8,8 @@
     // Convert to byte array
     if (message.constructor == String)
       message = utf8.stringToBytes(message);
+    else if (!Array.isArray(message))
+      message = message.toString();
     // otherwise assume byte array
 
     var m  = crypt.bytesToWords(message),
