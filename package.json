@@ -18,15 +18,15 @@
     "url": "https://github.com/pvorb/node-sha1/issues"
   },
   "main": "sha1.js",
-  "script": {
+  "scripts": {
     "test": "mocha"
   },
   "engines": {
     "node": "*"
   },
   "dependencies": {
-    "charenc": ">= 0.0.0",
-    "crypt": ">= 0.0.0"
+    "charenc": ">= 0.0.1",
+    "crypt": ">= 0.0.1"
   },
   "devDependencies": {
     "mocha": "~ 1.4.2"
