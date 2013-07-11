@@ -15,4 +15,11 @@ describe('sha1', function () {
     else
       assert.equal(sha1(msg1), sha1(msg1));
   });
+
+  it('should node.js Buffer', function() {
+
+    var buffer = new Buffer('hello, sha1', 'utf8');
+
+    assert.equal(sha1(buffer), sha1('hello, sha1'));
+  })
 });
