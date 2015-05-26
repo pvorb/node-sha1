@@ -9,7 +9,7 @@
     "native",
     "secure hashing algorithm"
   ],
-  "version": "1.1.0",
+  "version": "1.1.1",
   "repository": {
     "type": "git",
     "url": "git://github.com/pvorb/node-sha1.git"
