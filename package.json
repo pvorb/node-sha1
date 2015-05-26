@@ -17,6 +17,7 @@
   "bugs": {
     "url": "https://github.com/pvorb/node-sha1/issues"
   },
+  "license": "BSD-3-Clause",
   "main": "sha1.js",
   "scripts": {
     "test": "mocha"
