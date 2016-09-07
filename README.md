@@ -42,6 +42,37 @@ Returns the SHA-1 hash of the given message.
 
 It's as simple as that.
 
+### sha1(msg, options)
+
+Returns the binary string or bytes array representation of SHA-1 hash for msg, based on options. There are two mutually exclusive option flags:
+
+* `asString` true -- return binary string from digest bytes
+* `asBytes` true -- return array of digest bytes
+
+with empty options object, default output is hex-encoded string of digest bytes.
+
+#### Examples
+
+The following examples demonstate three possible outputs formats.
+
+Get bytes array and put into buffer (straightforward):
+~~~ javascript
+var hash_bytes = sha1("message", {asBytes: true});
+var result = new Buffer(hash_bytes);
+~~~
+
+Get binary string and decode into buffer as digest bytes: 
+~~~ javascript
+var hash_binary = sha1("message", {asString: true});
+var result = new Buffer(hash_binary, 'binary');
+~~~
+
+Get default hex-encoded output and decode into buffer as digest bytes:
+~~~ javascript
+var hash_text = sha1("message", {});
+var result = new Buffer(hash_text, 'hex');
+~~~
+
 
 Credits
 -------
