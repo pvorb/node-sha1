@@ -1,8 +1,7 @@
 sha1
 ====
 
-[![build
-status](https://secure.travis-ci.org/pvorb/node-sha1.png)](http://travis-ci.org/pvorb/node-sha1)
+[![build status](https://secure.travis-ci.org/pvorb/node-sha1.png)](http://travis-ci.org/pvorb/node-sha1) [![download count](https://img.shields.io/npm/dt/sha1.svg)](http://npm-stat.com/charts.html?package=sha1)
 
 a native js function for hashing messages with the SHA-1 algorithm
 
