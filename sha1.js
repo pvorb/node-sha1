@@ -5,6 +5,7 @@
 
   // The core
   sha1 = function (message) {
+    if (!message) { throw new Error('Cannot take SHA1 of undefined'); }
     // Convert to byte array
     if (message.constructor == String)
       message = utf8.stringToBytes(message);
